@@ -1,0 +1,120 @@
+/*styles.css*/
+
+body { background-color: #78B3CE;
+}
+
+.navbar {
+    font: bold;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    padding: 20px 40px;
+    z-index: 10;
+   
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 50;
+    padding: 0;
+    display: inline-block;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0;
+
+}
+
+.navbar ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 40px;
+    margin: 0;
+    transition: background-color 0.3s;
+    top: 25px;
+
+}
+
+.navbar ul li a:hover{
+    background-color: rgba(201, 230, 240, 1);
+
+    border-radius: 5px;
+
+}
+
+.logo{
+    left: 100px;
+    position: absolute;
+    width: 190px;
+    height: 50px;
+
+}
+
+.logo-link img {
+    display: block;
+    top: 25px;
+
+}
+
+/*header styke*/
+header {
+
+    padding: 10px 0;
+    position: relative;
+    z-index: 20; /* Ensure it stays above the slideshow */
+}
+
+/* slideshow*/
+
+.slideshow-container {
+    position: relative;
+    width: 600px; /* Fixed width for the slideshow */
+    height: 400px; /* Fixed height for the slideshow */
+    margin: 20px auto; /* Center the slideshow container horizontally */
+    overflow: hidden; /* Hide overflow to keep the slideshow clean */
+    display: flex; /* Flexbox for centering the image */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+
+}
+
+#slide {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    transition: opacity 1s ease-in-out;
+
+    
+}
+
+.slideshow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.slideshow-button:hover {
+    opacity: 1;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
